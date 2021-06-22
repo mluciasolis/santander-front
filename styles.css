@@ -1,3 +1,9 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     background-color: #fff7fd;
     /* background-image: url('https://pro2-bar-s3-cdn-cf.myportfolio.com/67cf45ca-338d-4fd0-943b-32d96162976a/b7b52d14-b827-4c3a-906f-3b94fa13f35f_rw_1920.png'); */
@@ -17,6 +23,12 @@ p {
 button {
     color: #fff;
     background-color: #025157;
+    font-size: 14px;
+    height: 45px;
+    font-weight: 600;
+    margin-left: 0px;
+    padding: 12px 12px 6px;
+    border-radius: 8px;
 }
 
 .fixed-header{
@@ -29,7 +41,7 @@ button {
 
 .header {
     /*margin: Arriba Derecha Abajo Izquierda*/
-    margin: 40px 20px 0 20px;
+    margin: 20px 20px 0 20px;
     /*margin-top: 40px;
     margin-left: 20px;
     margin-right: 20px;*/
@@ -135,4 +147,123 @@ li{
 .videoPromo img {
     width: 120px;
     margin-top: 10px;
+}
+
+.success-stories{
+    display: flex; 
+    background-color: #a1d683;
+    align-items: center;
+    justify-content: space-around;
+    padding: 5% 15%;
+}
+
+.overview{
+    flex: 2;
+    padding-right: 100px;
+}
+
+.overview h2 {
+    font-family: Alegreya, serif;
+    font-size: 51px;
+    line-height: 61px;
+    color: #025157;
+}
+
+.overview p {
+    color: #343434;
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+}
+
+.overview figure {
+    margin-top: 32px;
+}
+
+.overview img {
+    width: 500px;
+    max-width: 100%;
+}
+
+.stories-carousel{
+    flex: 1;
+}
+
+.card {
+    display: block;
+    /* position: relative; */
+    max-width: 370px;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+.card-media{
+    /* display: block; */
+    position: relative;
+}
+
+.card-media img {
+    width: 100%;
+    max-height: 16vw;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.company {
+    position: absolute;
+    bottom: -25px;
+    right: 20px;
+    width: 100px;
+    height: 100px;
+    background-color: #f9da73;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.company img {
+    max-width: 75%;
+}
+
+.card-body h4 {
+    color: #025157;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 20px;
+    margin-bottom: 12px;
+}
+
+.card-body h3 {
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 30px;
+    margin-bottom: 20px;
+}
+
+.results {
+    display: flex;
+    align-items: center;
+    color: #828282;
+}
+
+.results img {
+    width: 26px;
+    margin-right: 20px;
+}
+
+.card-footer, .card-body {
+    margin-bottom: 20px;
+    padding: 25px;
+}
+
+.card-footer button {
+    display: block;
+    margin-left: 0;
+    border-radius: 5px;
+    font-size: 13;
+    font-weight: 600;
+    padding: 12px 20px;
+    width: 100%;
 }
