@@ -19,6 +19,14 @@ button {
     background-color: #025157;
 }
 
+.fixed-header{
+    position: fixed;
+    background-color: white;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
 .header {
     /*margin: Arriba Derecha Abajo Izquierda*/
     margin: 40px 20px 0 20px;
@@ -85,4 +93,46 @@ li{
 .contenido{
     /*margin: Arriba Derecha Abajo Izquierda*/
     margin: 40px 20px 0 20px;
+}
+
+.promo{
+    display: flex;
+    width: 70%;
+    margin: 100px auto;/*arriba, abajo 100px, a los lados auto*/
+    align-items: center;
+}
+
+.publicidad h3{
+    font-family: "Alegreya", serif;
+    font-size: 40px;
+    line-height: 48px;
+    color: #025157;
+}
+
+.publicidad > p{
+    font-size: 16px;
+    color: #343434;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.publicidad > form {
+    display: flex;
+}
+
+.publicidad > form p {
+    color: #025157;
+    margin-right: 18px;
+}
+
+.videoPromo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right:20px ;
+}
+
+.videoPromo img {
+    width: 120px;
+    margin-top: 10px;
 }
