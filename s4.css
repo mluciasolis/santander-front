@@ -1,0 +1,37 @@
+.container{
+    display: flex;
+    width: 400px;
+    height: 400px;
+    /* flex-direction: row-reverse;en vez de que aparezcan los div del 1 al 6 aparecen del 6 al 1 */
+    /* flex-wrap: wrap;permite multilinea entre los elementos */
+    background-color: blue;
+}
+
+.container > .item{
+    background-color: grey;
+    width: 30%;
+    height: 30px;
+}
+
+.main{
+    display: flex;
+}
+
+.main div:nth-of-type(1){
+    /*Si el flex-grow tiene 2, a ese elemento de la daría 2 veces el espacio disponible repartido entre todos los elementos*/
+    flex-grow: 1;/*Del espacio que hay disponible/sobrante lo reparte entre los elementos que tienen el flex-grow*/
+}
+.main div:nth-of-type(4){
+    flex-grow: 1;
+}
+
+/*.main{
+    display: flex;
+    width: 500px;
+}
+
+.item-1{flex-basis: 100px; flex-grow: 1;}
+.item-2{flex-basis: 100px; flex-grow: 2;}
+.item-3{flex-basis: 100px; flex-grow: 1;}
+.item-4{flex-basis: 100px; flex-grow: 1;}
+*/
