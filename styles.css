@@ -12,6 +12,7 @@ body {
 h1 {
     color: #46484c;
     text-align: center;
+    font-size: 60px;
 }
 
 p {
@@ -103,9 +104,9 @@ li{
     border-radius: 5px;
 }
 
-.contenido{
+main{
     /*margin: Arriba Derecha Abajo Izquierda*/
-    margin: 120px 20px 0 20px;
+    margin: 300px 20px 0 20px;
 }
 
 .promo{
@@ -275,7 +276,7 @@ li{
     background-color: #025157;
     padding: 5% 10%;
     display: grid;
-    grid-template: repeat(2, 330px) / repeat(2, 1fr);
+    grid-template: repeat(2, 1fr) / repeat(2, 1fr);
     /* grid-template-columns: repeat(2,1fr);
     grid-template-rows: repeat(2,330px); */
 
@@ -388,7 +389,6 @@ li{
     grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
-
 .how-does-it-work .steps .card-step {
     background-color: #fff;
     border: 1px solid #dadada;
@@ -441,4 +441,87 @@ li{
     color: #67b54b;
     text-decoration: none;
 }
+
+/********** Sesión 5 **********/
+
+/** dispositivos móviles en vista viewport (vertical) */
+@media (max-width: 575px) {
+    body {
+        background-color: #e4d2df;
+    }
+
+    .navbar,.actions{
+        display: none;
+    }
+
+    main {
+        margin-top: 100px;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    .banner > img {
+        width: 100%;
+    }
+
+    .publish > form {
+        display: flex;
+        flex-direction: column;
+    }
+    .publish > form > div {
+        height: 50px;
+        margin-top: 10px;
+    }
+    
+    .publish > form > div > input {
+        width: 65%;
+    }
+
+    .promo{
+        flex-direction: column;
+        max-width: 90%;
+    }
+
+    .videoPromo{
+        width: 100%;
+    }
+
+    .publish > h3{
+        font-size: 25px;
+        line-height: 1.2;
+    }
+
+    .features {
+        grid-template: repeat(4, 1fr) / 1fr;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    
+    .feature-image {
+        display: none;
+    }
+}
+
+/** dispositivos pequeños en vista landscape (horizontal) */
+@media (min-width: 576px) and (max-width: 767px) {
+    
+}
+
+/** dispositivos medianos (tablets) */
+@media (min-width: 768px) and (max-width: 991px) {
+    
+}
+
+/** dispositivos grandes (desktops) */
+@media (min-width: 992px) and (max-width: 1199px) {
+    
+}
+
+/** dispositivos extra grandes (monitores grandes, tvs) */
+@media (min-width: 1200px) {
+    
+}
+
 
