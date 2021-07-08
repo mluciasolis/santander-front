@@ -6,9 +6,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Matcha</title>
-    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"
-    > -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
     <link rel="stylesheet" href="./styles.css">
@@ -119,7 +116,7 @@
             <input type="text" id="name" name="fname" required><br><br>
             <input type="text" id="lastname" name="lastname" placeholder="Apellido"><br><br>
             <input type="number" id="age" name="age" placeholder="Edad" min="18" max="35"><br><br>
-            <input type="email" id="email" name="email" placeholder="Correo"><br><br>
+            <input type="email" name="email" placeholder="Correo"><br><br>
             <input type="password" id="password" name="password" placeholder="Contraseña"><br><br>
             <button type="submit">Enviar</button>
         </form>
@@ -148,11 +145,11 @@
                 10,000+ professionally written articles and build your email list faster
                 with our powerful conversion tool.
             </p>
-            <form>
+            <form class="signup-form">
                 <p>Start publishing today:</p>
                 <div>
-                    <input type="text" placeholder="Enter email" />
-                    <button>Start My Trial</button>
+                    <input type="email" id="email" placeholder="Enter email" required/>
+                    <button type="submit">Start My Trial</button>
                 </div>
             </form>
         </article>
@@ -480,7 +477,6 @@
         </div>
     </section>
 
-
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
         integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
         crossorigin="anonymous"></script>
@@ -490,7 +486,6 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
         crossorigin="anonymous"></script>
-
+    <script src="./app.js"></script>
 </body>
-
 </html>
